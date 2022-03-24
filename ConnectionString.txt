@@ -1,0 +1,1 @@
+TNS_ADMIN=C:\Users\mocri\Oracle\network\admin;USER ID=STUDENT;PASSWORD=student;DATA SOURCE=localhost:1521/XE
