@@ -1,0 +1,13 @@
+D:\Facultate\Anul4\TPBD\Repo\TPBD\Angajati\Angajati\bin\Debug\Angajati.exe.config
+D:\Facultate\Anul4\TPBD\Repo\TPBD\Angajati\Angajati\bin\Debug\Angajati.exe
+D:\Facultate\Anul4\TPBD\Repo\TPBD\Angajati\Angajati\bin\Debug\Angajati.pdb
+D:\Facultate\Anul4\TPBD\Repo\TPBD\Angajati\Angajati\obj\Debug\Angajati.csproj.AssemblyReference.cache
+D:\Facultate\Anul4\TPBD\Repo\TPBD\Angajati\Angajati\obj\Debug\Angajati.Form1.resources
+D:\Facultate\Anul4\TPBD\Repo\TPBD\Angajati\Angajati\obj\Debug\Angajati.Properties.Resources.resources
+D:\Facultate\Anul4\TPBD\Repo\TPBD\Angajati\Angajati\obj\Debug\Angajati.csproj.GenerateResource.cache
+D:\Facultate\Anul4\TPBD\Repo\TPBD\Angajati\Angajati\obj\Debug\Angajati.csproj.CoreCompileInputs.cache
+D:\Facultate\Anul4\TPBD\Repo\TPBD\Angajati\Angajati\obj\Debug\Angajati.exe
+D:\Facultate\Anul4\TPBD\Repo\TPBD\Angajati\Angajati\obj\Debug\Angajati.pdb
+D:\Facultate\Anul4\TPBD\Repo\TPBD\Angajati\Angajati\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Facultate\Anul4\TPBD\Repo\TPBD\Angajati\Angajati\obj\Debug\Angajati.csproj.CopyComplete
+D:\Facultate\Anul4\TPBD\Repo\TPBD\Angajati\Angajati\obj\Debug\Angajati.Form2.resources
