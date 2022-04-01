@@ -33,6 +33,7 @@ namespace Angajati
             this.button1 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button9 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -40,6 +41,22 @@ namespace Angajati
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button8 = new System.Windows.Forms.Button();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
@@ -51,30 +68,17 @@ namespace Angajati
             this.button4 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.button8 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(307, 59);
             this.dataGridView1.Name = "dataGridView1";
@@ -85,12 +89,13 @@ namespace Angajati
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(155, 228);
+            this.button1.Location = new System.Drawing.Point(521, 338);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(124, 42);
             this.button1.TabIndex = 1;
             this.button1.Text = "Actualizare";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // tabControl1
             // 
@@ -107,6 +112,7 @@ namespace Angajati
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.button9);
             this.tabPage1.Controls.Add(this.button6);
             this.tabPage1.Controls.Add(this.textBox2);
             this.tabPage1.Controls.Add(this.textBox1);
@@ -123,14 +129,24 @@ namespace Angajati
             this.tabPage1.Text = "Actualizeaza angajati";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(155, 216);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(124, 42);
+            this.button9.TabIndex = 9;
+            this.button9.Text = "Cautare";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(155, 290);
+            this.button6.Location = new System.Drawing.Point(824, 338);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(124, 42);
             this.button6.TabIndex = 8;
             this.button6.Text = "Renunta";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // textBox2
             // 
@@ -200,6 +216,149 @@ namespace Angajati
             this.tabPage2.Text = "Adauga angajati";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(600, 319);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(110, 45);
+            this.button8.TabIndex = 15;
+            this.button8.Text = "Anulare";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(189, 71);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(162, 26);
+            this.textBox9.TabIndex = 14;
+            this.textBox9.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox9_keyPressed);
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(189, 338);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(162, 26);
+            this.textBox8.TabIndex = 13;
+            this.textBox8.Text = "0";
+            this.textBox8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox8_keyPressed);
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(189, 288);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(162, 26);
+            this.textBox7.TabIndex = 12;
+            this.textBox7.Text = "0";
+            this.textBox7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox7_keyPressed);
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(189, 248);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(162, 26);
+            this.textBox6.TabIndex = 11;
+            this.textBox6.Text = "0";
+            this.textBox6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox6_keyPressed);
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(189, 208);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(162, 26);
+            this.textBox5.TabIndex = 10;
+            this.textBox5.Text = "0";
+            this.textBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox5_keyPressed);
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(189, 164);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(162, 26);
+            this.textBox4.TabIndex = 9;
+            this.textBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox4_keyPressed);
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(189, 119);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(162, 26);
+            this.textBox3.TabIndex = 8;
+            this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_keyPressed);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(74, 341);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(64, 20);
+            this.label14.TabIndex = 7;
+            this.label14.Text = "Retineri";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(74, 288);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(93, 20);
+            this.label13.TabIndex = 6;
+            this.label13.Text = "Premii brute";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(74, 248);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(43, 20);
+            this.label12.TabIndex = 5;
+            this.label12.Text = "Spor";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(74, 208);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(107, 20);
+            this.label11.TabIndex = 4;
+            this.label11.Text = "Salar de baza";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(74, 119);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(73, 20);
+            this.label10.TabIndex = 3;
+            this.label10.Text = "Prenume";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(74, 164);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(62, 20);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "Functie";
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(450, 319);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(110, 45);
+            this.button7.TabIndex = 1;
+            this.button7.Text = "Adaugare";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(74, 71);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(51, 20);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Nume";
+            // 
             // tabPage3
             // 
             this.tabPage3.Location = new System.Drawing.Point(4, 29);
@@ -211,6 +370,7 @@ namespace Angajati
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.button10);
             this.tabPage4.Location = new System.Drawing.Point(4, 29);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Size = new System.Drawing.Size(1231, 436);
@@ -314,150 +474,17 @@ namespace Angajati
             this.button5.TabIndex = 10;
             this.button5.Text = "Paraseste aplicatia";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // label8
+            // button10
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(74, 71);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(51, 20);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Nume";
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(450, 319);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(110, 45);
-            this.button7.TabIndex = 1;
-            this.button7.Text = "Adaugare";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(74, 164);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(62, 20);
-            this.label9.TabIndex = 2;
-            this.label9.Text = "Functie";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(74, 119);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(73, 20);
-            this.label10.TabIndex = 3;
-            this.label10.Text = "Prenume";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(74, 208);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(107, 20);
-            this.label11.TabIndex = 4;
-            this.label11.Text = "Salar de baza";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(74, 248);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(43, 20);
-            this.label12.TabIndex = 5;
-            this.label12.Text = "Spor";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(74, 288);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(93, 20);
-            this.label13.TabIndex = 6;
-            this.label13.Text = "Premii brute";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(74, 341);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(64, 20);
-            this.label14.TabIndex = 7;
-            this.label14.Text = "Retineri";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(189, 119);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(162, 26);
-            this.textBox3.TabIndex = 8;
-            this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_keyPressed);
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(189, 164);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(162, 26);
-            this.textBox4.TabIndex = 9;
-            this.textBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox4_keyPressed);
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(189, 208);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(162, 26);
-            this.textBox5.TabIndex = 10;
-            this.textBox5.Text = "0";
-            this.textBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox5_keyPressed);
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(189, 248);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(162, 26);
-            this.textBox6.TabIndex = 11;
-            this.textBox6.Text = "0";
-            this.textBox6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox6_keyPressed);
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(189, 288);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(162, 26);
-            this.textBox7.TabIndex = 12;
-            this.textBox7.Text = "0";
-            this.textBox7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox7_keyPressed);
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(189, 338);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(162, 26);
-            this.textBox8.TabIndex = 13;
-            this.textBox8.Text = "0";
-            this.textBox8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox8_keyPressed);
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(189, 71);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(162, 26);
-            this.textBox9.TabIndex = 14;
-            this.textBox9.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
-            this.textBox9.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox9_keyPressed);
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(600, 319);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(110, 45);
-            this.button8.TabIndex = 15;
-            this.button8.Text = "Anulare";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.button10.Location = new System.Drawing.Point(74, 100);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(152, 39);
+            this.button10.TabIndex = 0;
+            this.button10.Text = "button10";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // Form1
             // 
@@ -483,6 +510,7 @@ namespace Angajati
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -528,6 +556,8 @@ namespace Angajati
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
     }
 }
 
