@@ -58,7 +58,15 @@ namespace Angajati
             this.button7 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.button11 = new System.Windows.Forms.Button();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.button10 = new System.Windows.Forms.Button();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -68,17 +76,23 @@ namespace Angajati
             this.button4 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.label18 = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(307, 59);
             this.dataGridView1.Name = "dataGridView1";
@@ -93,7 +107,7 @@ namespace Angajati
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(124, 42);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Actualizare";
+            this.button1.Text = "Salvare";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -346,7 +360,7 @@ namespace Angajati
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(110, 45);
             this.button7.TabIndex = 1;
-            this.button7.Text = "Adaugare";
+            this.button7.Text = "Salvare";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
@@ -361,6 +375,13 @@ namespace Angajati
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.label17);
+            this.tabPage3.Controls.Add(this.label16);
+            this.tabPage3.Controls.Add(this.button11);
+            this.tabPage3.Controls.Add(this.textBox11);
+            this.tabPage3.Controls.Add(this.textBox10);
+            this.tabPage3.Controls.Add(this.label15);
+            this.tabPage3.Controls.Add(this.dataGridView2);
             this.tabPage3.Location = new System.Drawing.Point(4, 29);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(1231, 436);
@@ -368,8 +389,75 @@ namespace Angajati
             this.tabPage3.Text = "Sterge angajati";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(27, 191);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(73, 20);
+            this.label17.TabIndex = 6;
+            this.label17.Text = "Prenume";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(49, 141);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(51, 20);
+            this.label16.TabIndex = 5;
+            this.label16.Text = "Nume";
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(195, 237);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(84, 38);
+            this.button11.TabIndex = 4;
+            this.button11.Text = "Sterge";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(110, 185);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(169, 26);
+            this.textBox11.TabIndex = 3;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(110, 135);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(169, 26);
+            this.textBox10.TabIndex = 2;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(154, 88);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(89, 26);
+            this.label15.TabIndex = 1;
+            this.label15.Text = "Cautare";
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(387, 88);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 62;
+            this.dataGridView2.RowTemplate.Height = 28;
+            this.dataGridView2.Size = new System.Drawing.Size(737, 312);
+            this.dataGridView2.TabIndex = 0;
+            // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.richTextBox1);
+            this.tabPage4.Controls.Add(this.label18);
+            this.tabPage4.Controls.Add(this.dataGridView3);
             this.tabPage4.Controls.Add(this.button10);
             this.tabPage4.Location = new System.Drawing.Point(4, 29);
             this.tabPage4.Name = "tabPage4";
@@ -377,6 +465,16 @@ namespace Angajati
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Calculeaza salarii";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(58, 100);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(152, 39);
+            this.button10.TabIndex = 0;
+            this.button10.Text = "Calculeaza";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // tabPage5
             // 
@@ -476,15 +574,35 @@ namespace Angajati
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // button10
+            // dataGridView3
             // 
-            this.button10.Location = new System.Drawing.Point(74, 100);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(152, 39);
-            this.button10.TabIndex = 0;
-            this.button10.Text = "button10";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.dataGridView3.AllowUserToAddRows = false;
+            this.dataGridView3.AllowUserToDeleteRows = false;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(320, 100);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.RowHeadersWidth = 62;
+            this.dataGridView3.RowTemplate.Height = 28;
+            this.dataGridView3.Size = new System.Drawing.Size(859, 298);
+            this.dataGridView3.TabIndex = 1;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(53, 207);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(136, 26);
+            this.label18.TabIndex = 2;
+            this.label18.Text = "Stadiu calcul";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(58, 284);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(185, 81);
+            this.richTextBox1.TabIndex = 3;
+            this.richTextBox1.Text = "";
             // 
             // Form1
             // 
@@ -510,7 +628,12 @@ namespace Angajati
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -558,6 +681,16 @@ namespace Angajati
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
 
