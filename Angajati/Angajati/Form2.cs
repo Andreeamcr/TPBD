@@ -16,16 +16,19 @@ namespace Angajati
         public Form2()
         {
             InitializeComponent();
+           
         }
 
         OracleConnection conn;
         OracleDataAdapter da;
         DataSet ds;
         string strSQL;
+        string parola1;
         private void Form2_Load(object sender, EventArgs e)
         {
             try
             {
+                
                 conn = new OracleConnection("USER ID=STUDENT;PASSWORD=student;DATA SOURCE=localhost:1521/XE");
                 conn.Open();
                 strSQL = "SELECT * FROM Procente";

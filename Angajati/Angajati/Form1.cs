@@ -149,8 +149,8 @@ namespace Angajati
 
         private void button10_Click(object sender, EventArgs e)
         {
-            //var form = new Form2();
-            //form.Show();
+            //var form2 = new Form2();
+            //form2.Show();
 
             //TODO: de facut calculul cu parametrii extrasi din tabela si facut un reloadGrid la final 
 
@@ -181,6 +181,12 @@ namespace Angajati
 
                 }
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3();
+            form3.ShowDialog();
         }
 
         private void textBox6_keyPressed(object sender, KeyPressEventArgs e)

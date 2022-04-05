@@ -11,3 +11,4 @@ D:\Facultate\Anul4\TPBD\Repo\TPBD\Angajati\Angajati\obj\Debug\Angajati.pdb
 D:\Facultate\Anul4\TPBD\Repo\TPBD\Angajati\Angajati\bin\Debug\Oracle.ManagedDataAccess.dll
 D:\Facultate\Anul4\TPBD\Repo\TPBD\Angajati\Angajati\obj\Debug\Angajati.csproj.CopyComplete
 D:\Facultate\Anul4\TPBD\Repo\TPBD\Angajati\Angajati\obj\Debug\Angajati.Form2.resources
+D:\Facultate\Anul4\TPBD\Repo\TPBD\Angajati\Angajati\obj\Debug\Angajati.Form3.resources
