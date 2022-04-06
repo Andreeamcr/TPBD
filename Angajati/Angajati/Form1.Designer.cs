@@ -33,7 +33,6 @@ namespace Angajati
             this.button1 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button9 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -67,7 +66,6 @@ namespace Angajati
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.button10 = new System.Windows.Forms.Button();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
@@ -78,7 +76,7 @@ namespace Angajati
             this.button5 = new System.Windows.Forms.Button();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.label18 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.label19 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -117,7 +115,6 @@ namespace Angajati
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Location = new System.Drawing.Point(12, 95);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -126,7 +123,6 @@ namespace Angajati
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.button9);
             this.tabPage1.Controls.Add(this.button6);
             this.tabPage1.Controls.Add(this.textBox2);
             this.tabPage1.Controls.Add(this.textBox1);
@@ -142,15 +138,6 @@ namespace Angajati
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Actualizeaza angajati";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(155, 216);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(124, 42);
-            this.button9.TabIndex = 9;
-            this.button9.Text = "Cautare";
-            this.button9.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
@@ -168,6 +155,7 @@ namespace Angajati
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(141, 26);
             this.textBox2.TabIndex = 7;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox1
             // 
@@ -175,6 +163,7 @@ namespace Angajati
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(141, 26);
             this.textBox1.TabIndex = 6;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_key);
             // 
             // label5
             // 
@@ -375,6 +364,7 @@ namespace Angajati
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.label19);
             this.tabPage3.Controls.Add(this.label17);
             this.tabPage3.Controls.Add(this.label16);
             this.tabPage3.Controls.Add(this.button11);
@@ -423,6 +413,7 @@ namespace Angajati
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(169, 26);
             this.textBox11.TabIndex = 3;
+            this.textBox11.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
             // 
             // textBox10
             // 
@@ -430,6 +421,7 @@ namespace Angajati
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(169, 26);
             this.textBox10.TabIndex = 2;
+            this.textBox10.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
             // 
             // label15
             // 
@@ -455,7 +447,6 @@ namespace Angajati
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.richTextBox1);
             this.tabPage4.Controls.Add(this.label18);
             this.tabPage4.Controls.Add(this.dataGridView3);
             this.tabPage4.Controls.Add(this.button10);
@@ -475,15 +466,6 @@ namespace Angajati
             this.button10.Text = "Calculeaza";
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Location = new System.Drawing.Point(4, 29);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1231, 436);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Ajutor";
-            this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -513,21 +495,23 @@ namespace Angajati
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(90, 695);
+            this.button2.Location = new System.Drawing.Point(263, 695);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(169, 49);
             this.button2.TabIndex = 5;
-            this.button2.Text = "Stat de plata";
+            this.button2.Text = "Fluturasi";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(276, 695);
+            this.button3.Location = new System.Drawing.Point(82, 695);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(162, 49);
             this.button3.TabIndex = 6;
-            this.button3.Text = "Fluturasi";
+            this.button3.Text = "Stat de plata";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label3
             // 
@@ -597,13 +581,15 @@ namespace Angajati
             this.label18.TabIndex = 2;
             this.label18.Text = "Stadiu calcul";
             // 
-            // richTextBox1
+            // label19
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(58, 284);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(185, 81);
-            this.richTextBox1.TabIndex = 3;
-            this.richTextBox1.Text = "";
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(31, 328);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(159, 26);
+            this.label19.TabIndex = 7;
+            this.label19.Text = "Status stergere";
             // 
             // Form1
             // 
@@ -657,7 +643,6 @@ namespace Angajati
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label5;
@@ -680,7 +665,6 @@ namespace Angajati
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.TextBox textBox11;
@@ -691,7 +675,7 @@ namespace Angajati
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Label label19;
     }
 }
 

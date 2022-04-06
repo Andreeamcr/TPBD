@@ -23,7 +23,6 @@ namespace Angajati
         OracleDataAdapter da;
         DataSet ds;
         string strSQL;
-        string parola1;
         private void Form2_Load(object sender, EventArgs e)
         {
             try
@@ -57,6 +56,39 @@ namespace Angajati
                 MessageBox.Show(ex.Message.ToString());
             }
             
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                conn.Open();
+                var cell = dataGridView1.CurrentCell;
+                StringBuilder strSQL = new StringBuilder("UPDATE PROCENTE SET ", 100);
+                switch (cell.ColumnIndex)
+                {
+                    case 0:
+                        strSQL.Append($"CAS={cell.Value}");
+                        break;
+                    case 1:
+                        strSQL.Append($"CASS={cell.Value}");
+                        break;
+                    case 2:
+                        strSQL.Append($"IMPOZIT={cell.Value}");
+                        break;
+                    default:
+                        break;
+                }
+                OracleCommand command = new OracleCommand(strSQL.ToString(), conn);
+                command.ExecuteNonQuery();
+
+                MessageBox.Show("Actualizat cu succes!"); 
+                conn.Close();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+            }
         }
     }
 }
