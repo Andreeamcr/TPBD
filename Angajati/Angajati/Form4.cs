@@ -104,6 +104,28 @@ namespace Angajati
 
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                conn = new OracleConnection("USER ID=STUDENT;PASSWORD=student;DATA SOURCE=localhost:1521/XE");
+                strSQL = "SELECT * FROM ANGAJATI";
+                da = new OracleDataAdapter(strSQL, conn);
+                ds = new DataSet();
+                da.Fill(ds, "angajati");
+                dataGridView1.DataSource = ds.Tables["angajati"];
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+            }
+            CrystalReport2 raport = new CrystalReport2();
+            raport.SetDataSource(ds.Tables["angajati"]);
+            crystalReportViewer1.ReportSource = raport;
+        }
     }
     }
+    
 

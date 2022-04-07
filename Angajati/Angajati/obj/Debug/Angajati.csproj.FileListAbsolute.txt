@@ -32,3 +32,4 @@ D:\Facultate\Anul4\TPBD\Repo\TPBD\Angajati\Angajati\bin\Debug\CrystalDecisions.R
 D:\Facultate\Anul4\TPBD\Repo\TPBD\Angajati\Angajati\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
 D:\Facultate\Anul4\TPBD\Repo\TPBD\Angajati\Angajati\bin\Debug\stdole.dll
 D:\Facultate\Anul4\TPBD\Repo\TPBD\Angajati\Angajati\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\Facultate\Anul4\TPBD\Repo\TPBD\Angajati\Angajati\obj\Debug\Angajati.csproj.AssemblyReference.cache

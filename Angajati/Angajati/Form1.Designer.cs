@@ -57,6 +57,7 @@ namespace Angajati
             this.button7 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label19 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.button11 = new System.Windows.Forms.Button();
@@ -65,6 +66,8 @@ namespace Angajati
             this.label15 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.label18 = new System.Windows.Forms.Label();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.button10 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -74,9 +77,6 @@ namespace Angajati
             this.button4 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -312,9 +312,9 @@ namespace Angajati
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(74, 248);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(43, 20);
+            this.label12.Size = new System.Drawing.Size(71, 20);
             this.label12.TabIndex = 5;
-            this.label12.Text = "Spor";
+            this.label12.Text = "Spor (%)";
             // 
             // label11
             // 
@@ -378,6 +378,16 @@ namespace Angajati
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Sterge angajati";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(31, 328);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(159, 26);
+            this.label19.TabIndex = 7;
+            this.label19.Text = "Status stergere";
             // 
             // label17
             // 
@@ -456,6 +466,28 @@ namespace Angajati
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Calculeaza salarii";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(53, 207);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(136, 26);
+            this.label18.TabIndex = 2;
+            this.label18.Text = "Stadiu calcul";
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.AllowUserToAddRows = false;
+            this.dataGridView3.AllowUserToDeleteRows = false;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(320, 100);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.RowHeadersWidth = 62;
+            this.dataGridView3.RowTemplate.Height = 28;
+            this.dataGridView3.Size = new System.Drawing.Size(859, 298);
+            this.dataGridView3.TabIndex = 1;
             // 
             // button10
             // 
@@ -558,38 +590,6 @@ namespace Angajati
             this.button5.Text = "Paraseste aplicatia";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // dataGridView3
-            // 
-            this.dataGridView3.AllowUserToAddRows = false;
-            this.dataGridView3.AllowUserToDeleteRows = false;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(320, 100);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowHeadersWidth = 62;
-            this.dataGridView3.RowTemplate.Height = 28;
-            this.dataGridView3.Size = new System.Drawing.Size(859, 298);
-            this.dataGridView3.TabIndex = 1;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(53, 207);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(136, 26);
-            this.label18.TabIndex = 2;
-            this.label18.Text = "Stadiu calcul";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(31, 328);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(159, 26);
-            this.label19.TabIndex = 7;
-            this.label19.Text = "Status stergere";
             // 
             // Form1
             // 

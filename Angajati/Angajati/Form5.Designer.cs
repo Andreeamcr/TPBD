@@ -32,6 +32,9 @@ namespace Angajati
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.CrystalReport21 = new Angajati.CrystalReport2();
+            this.CrystalReport11 = new Angajati.CrystalReport1();
+            this.CrystalReport12 = new Angajati.CrystalReport1();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,11 +63,12 @@ namespace Angajati
             // 
             // crystalReportViewer1
             // 
-            this.crystalReportViewer1.ActiveViewIndex = -1;
+            this.crystalReportViewer1.ActiveViewIndex = 0;
             this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
             this.crystalReportViewer1.Location = new System.Drawing.Point(5, 276);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
+            this.crystalReportViewer1.ReportSource = this.CrystalReport11;
             this.crystalReportViewer1.Size = new System.Drawing.Size(1325, 506);
             this.crystalReportViewer1.TabIndex = 3;
             // 
@@ -88,5 +92,8 @@ namespace Angajati
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button1;
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
+        private CrystalReport2 CrystalReport21;
+        private CrystalReport1 CrystalReport11;
+        private CrystalReport1 CrystalReport12;
     }
 }

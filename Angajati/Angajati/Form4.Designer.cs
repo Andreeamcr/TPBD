@@ -39,6 +39,7 @@ namespace Angajati
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.CrystalReport11 = new Angajati.CrystalReport1();
+            this.CrystalReport21 = new Angajati.CrystalReport2();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -104,6 +105,7 @@ namespace Angajati
             this.button2.TabIndex = 6;
             this.button2.Text = "Genereaza fluturasi toti angajatii";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // dataGridView1
             // 
@@ -122,7 +124,7 @@ namespace Angajati
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
             this.crystalReportViewer1.Location = new System.Drawing.Point(36, 262);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ReportSource = this.CrystalReport11;
+            this.crystalReportViewer1.ReportSource = this.CrystalReport21;
             this.crystalReportViewer1.Size = new System.Drawing.Size(1270, 480);
             this.crystalReportViewer1.TabIndex = 8;
             // 
@@ -161,5 +163,6 @@ namespace Angajati
         private System.Windows.Forms.DataGridView dataGridView1;
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
         private CrystalReport1 CrystalReport11;
+        private CrystalReport2 CrystalReport21;
     }
 }
